@@ -1,0 +1,34 @@
+#dog-select {
+  width: 25%;
+  margin: 10px;
+}
+
+.text{
+  padding: 10px;
+}
+
+.img-dogs {
+  width: 50%;
+  height: 50vh;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: 10px 5px 5px #ff0000;
+}
+
+.content-vote {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rate-button {
+  margin: 10px;
+  border: none;
+  background-color: #fff;
+}
+
+.img-rate:hover {
+  cursor: pointer;
+  width: 43px;
+}

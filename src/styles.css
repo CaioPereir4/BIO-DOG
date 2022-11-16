@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Raleway-medium';
+  src: url('assets/Font_Roleways/Raleway-Medium.ttf') format('truetype');}
+
+  @font-face {
+    font-family: 'Open-sans';
+    src: url('assets/Opensans/OpenSans-Medium.ttf') format('truetype');}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --medium_font : Raleway-medium; /* Definido a fonte 'Raleway-medium' a varíavel --medium_font.*/
+  --color1 : #ec0000	;
+  --prg_font: Open-sans; /* Fonte para utilizar em parágrafps*/
+}
+
+.content{
+  font-family: var(--prg_font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.text{
+  margin: 5px;
+}
+
+

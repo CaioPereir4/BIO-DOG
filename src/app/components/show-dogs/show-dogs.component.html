@@ -1,0 +1,38 @@
+<div class="content">
+  <label for="select-breed">Selecione uma raça:</label>
+
+  <!--Optei por utilizar o ngModel para deixar o select reativo.
+    Quando há um mudança (ngModelChange) no select a função searchImageDog() é chamada.
+    O dog.id é atribuido automaticamente de acordo com a raça selecionada no select.-->
+  <select
+    name="choose-breeds"
+    id="dog-select"
+    [(ngModel)]="dog.id"
+    (ngModelChange)="searchImageDog()"
+  >
+    <option *ngFor="let dog of objectBreeds" [value]="dog.id">
+      <p>{{ dog.name }}</p>
+    </option>
+  </select>
+
+  <!--Após a função searchImageDog() ser chamada a imagem será exposta-->
+  <img
+    [src]="dog.image"
+    alt="dog-image"
+    class="img-dogs"
+    *ngIf="dog.image.length > 0"
+  />
+
+  <!--As tags HTML abaixo serão exposta de acordo com a varíavel wasVoted,
+  ela faz verificação se a pessoa já votou positivamente ou negativamente.-->
+  <div class="content-vote" *ngIf="dog.image.length > 0 && wasVoted === false">
+    <p class="text">Avalie esta imagem:</p>
+    <button class="rate-button" (click)="vote(dog.imageId, 0)">
+      <img class="img-rate" src="../../../assets/deslike.png" alt="like" />
+    </button>
+    <button class="rate-button" (click)="vote(dog.imageId, 1)">
+      <img class="img-rate" src="../../../assets/like.png" alt="deslike" />
+    </button>
+  </div>
+  <p *ngIf="wasVoted">Obrigado por sua avaliação!</p>
+</div>
