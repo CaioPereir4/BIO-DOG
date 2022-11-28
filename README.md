@@ -6,4 +6,4 @@
 ### :heavy_check_mark: Integração com a The Dog API: https://thedogapi.com/
 ### :heavy_check_mark: Responsividade.
 ### :heavy_check_mark: Clean Code.
-### Implementado e com integração contínua. Acesse: https://cerulean-chaja-b49ed6.netlify.app/
+### :hammer_and_wrench: Implementado e com integração contínua. Acesse: https://cerulean-chaja-b49ed6.netlify.app/
