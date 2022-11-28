@@ -13,7 +13,7 @@ describe('ShowDogsComponent', () => {
 
   //Testando se o ShowDogsComponent foi instanciado.
   it(`#${ShowDogsComponent.name} should be instantiated `, () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeDefined();
   });
 
   //Testando se o ngOninit está funcionando corretamente.

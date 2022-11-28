@@ -28,7 +28,19 @@
   background-color: #fff;
 }
 
-.img-rate:hover {
+
+#img-deslike:hover {
   cursor: pointer;
-  width: 43px;
+  background-color: #57f586;
+
+  border-radius: 20px;
+  transition: 1s;
 }
+
+#img-like:hover {
+  cursor: pointer;
+  background-color: #f55757;
+  border-radius: 20px;
+  transition: 1s;
+}
+

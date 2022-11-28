@@ -28,10 +28,10 @@
   <div class="content-vote" *ngIf="dog.image.length > 0 && wasVoted === false">
     <p class="text">Avalie esta imagem:</p>
     <button class="rate-button" (click)="vote(dog.imageId, 0)">
-      <img class="img-rate" src="../../../assets/deslike.png" alt="like" />
+      <img id="img-like" src="../../../assets/deslike.png" alt="like" />
     </button>
     <button class="rate-button" (click)="vote(dog.imageId, 1)">
-      <img class="img-rate" src="../../../assets/like.png" alt="deslike" />
+      <img id="img-deslike" src="../../../assets/like.png" alt="deslike" />
     </button>
   </div>
   <p *ngIf="wasVoted">Obrigado por sua avaliação!</p>
