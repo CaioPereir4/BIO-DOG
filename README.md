@@ -7,3 +7,8 @@
 ### :heavy_check_mark: Responsividade.
 ### :heavy_check_mark: Clean Code.
 ### :heavy_check_mark: Implementado, e com integração contínua. Acesse: https://cerulean-chaja-b49ed6.netlify.app/
+
+
+## O resultado está na imagem abaixo:
+
+![Cat](https://raw.githubusercontent.com/CaioPereir4/BIO-DOG/master/src/assets/print_biodog.png)
